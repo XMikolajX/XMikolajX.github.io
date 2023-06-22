@@ -1,0 +1,222 @@
+/*NAV CONTENT */
+
+
+  @font-face {
+    font-family: Karla-VariableFont;
+    src: url('font/Karla-VariableFont_wght.ttf');
+  }
+  @font-face {
+    font-family: PublicPixel;
+    src: url('font/PublicPixel-z84yD.ttf');
+  }
+
+
+  @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateX(0px);
+    }
+   }
+   @keyframes drop-in-from-left {
+    from {
+     
+     transform: translateX(-100px);
+    }
+    to {
+   
+     transform: translateX(0px);
+    }
+   }
+   
+body {
+   background-color: #0A192F;
+   color: white;
+   font-family: Karla-VariableFont;
+
+}
+  a {
+    text-decoration: none;
+    color: white;
+}
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem ;
+}
+
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #4FCAB6;
+    padding: 1rem;
+    border: 1px solid #4f93ca;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-shadow: 2px 2px red;
+    box-shadow: 1px 1px 15px lightblue;
+    cursor: pointer;
+    
+}
+#logo:hover {
+   
+    box-shadow: 1px 1px 25px lightblue;
+    
+}
+#list  {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+}
+  #list  > li  {
+   margin: 0 1rem 0 1rem;
+   cursor: pointer;
+   padding: 1rem;
+   animation: drop-in 0.7s ease 100ms backwards;
+   animation-iteration-count: 1;
+  
+}
+#list > li:hover  {
+    color:#4FCAB6;
+    opacity: 0.8;
+    
+ }
+ .hiddenBlock {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top:5rem;
+    left: 0;
+    box-shadow: 1px 1px 25px lightblue;
+    width: 100%;
+    z-index: 999999;
+    
+}
+
+
+.hiddenAbouteMe ul li {
+    cursor: default;
+    list-style-type:decimal-leading-zero;
+    padding: 2rem;
+}
+
+
+.hiddenContact {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    
+}
+.hiddenContact div {
+    display: flex;
+    margin: 1rem 0 1rem 0
+
+} 
+ .hiddenContact  div a {
+    color:#a20606;
+    
+
+}
+.hiddenContact  div a:hover {
+    color:#eb0909;
+    
+
+}
+
+
+
+
+
+@keyframes spreadingElement {
+    from    {
+        max-height: 0;
+    }
+    to {
+        max-height: 100vh;
+    }
+    
+}
+.showContent{
+    display: flex;
+    opacity: 1;
+  
+    animation: spreadingElement 0.8s ease forwards ;
+   
+}
+
+/*NAV CONTENT END*/
+
+/*ARTICLE CONTENT*/
+
+
+#mainContent {
+    margin: 5rem 9rem 5rem 9rem ;
+
+   
+}
+#mainContent h3  {
+   font-size: 1.5rem;
+   color:lightblue;
+   
+}
+#mainContent h1 {
+    font-size: 5rem;
+    margin: 1rem 0 1rem 0 ;
+    color: rgba(255, 255, 255, 0.847);
+    color:#c7d8e7
+}
+#mainContent h2 {
+    font-size: 4.5rem;
+    margin: 1rem 0 0 0  ;
+    color: rgba(240, 248, 255, 0.713);
+    opacity: 0.7;
+}
+#subContent {
+   
+    font-size:1rem;
+    padding: 0 0 1rem 0 ;
+    text-align: left;
+    border-bottom: 5px solid white;
+    transition: border-bottom 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  
+}
+@keyframes typing {
+    from{
+        width: 0;;
+    }
+    to{
+        width: 100%;
+    }
+} 
+.paragraphText {
+    display: none;
+}
+.typingAnimation{
+    animation: typing 3s steps(80, end)  300ms forwards 1;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    display: block;
+  
+}
+#subContent p {
+    padding: 0.5rem 0 0.5rem 0;
+    opacity: 0.7;
+    font-weight: bold;
+  
+
+}
+
+
+/*ARTICLE CONTENT END*/
