@@ -22,7 +22,7 @@
     }
    }
 
-   
+
 body {
    background-color: #0A192F;
    color: white;
@@ -32,6 +32,12 @@ body {
   a {
     text-decoration: none;
     color: white;
+}
+.flex-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
 }
 #navBar {
     display: flex;
@@ -70,6 +76,7 @@ body {
     font-weight: 500;
     font-size: 1rem;
     position: relative;
+    white-space: nowrap;
 }
   #list  > li  {
     margin: 0 1vw;
@@ -91,15 +98,16 @@ body {
     top:5vw;
     left: 0;
     box-shadow: 1px 1px 25px lightblue;
-    width: 100%;
+    max-width: 50vw;
     background-color: #0A192F;
     z-index: 999;
-    
+  
 }
 
 
 .hiddenAbouteMe ul li {
     cursor: default;
+    white-space: wrap;
     list-style-type:decimal-leading-zero;
     padding: 2rem;
 }
@@ -154,8 +162,8 @@ body {
 /*ARTICLE CONTENT*/
 
 
-#mainContent {
-    margin: 5vh 9vw;
+ #mainInformation, h3, h2, h1 {
+    text-align: left;
 
    
 }
@@ -171,7 +179,7 @@ body {
     color:#c7d8e7
 }
 #mainContent h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin: 1rem 0 0 0  ;
     color: rgba(240, 248, 255, 0.713);
     opacity: 0.7;
