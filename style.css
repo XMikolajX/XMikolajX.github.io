@@ -1,6 +1,8 @@
 /*NAV CONTENT */
 
-
+* {
+    box-sizing: border-box;
+}
   @font-face {
     font-family: Karla-VariableFont;
     src: url('font/Karla-VariableFont_wght.ttf');
@@ -21,13 +23,15 @@
      transform: translateX(0px);
     }
    }
-
-
+ html {
+   overflow-x: hidden;
+   overflow-y: scroll;
+ }
 body {
    background-color: #0A192F;
    color: white;
    font-family: Karla-VariableFont;
-
+    overflow-x: hidden;
 }
   a {
     text-decoration: none;
@@ -95,13 +99,12 @@ body {
     display: none;
     opacity: 0;
     position: absolute;
-    top:5vw;
-    left: 0;
+    top: 11vh;
+    right: 10vw;
     box-shadow: 1px 1px 25px lightblue;
-    max-width: 50vw;
     background-color: #0A192F;
     z-index: 999;
-  
+
 }
 
 
@@ -109,7 +112,8 @@ body {
     cursor: default;
     white-space: wrap;
     list-style-type:decimal-leading-zero;
-    padding: 2rem;
+    padding: 2vw;
+
 }
 
 
@@ -141,19 +145,21 @@ body {
     }
     to {
         max-height: 100vh;
+        min-height: 1vh;
     }
     
 }
 .showContent{
     display: flex;
     opacity: 1;
-  
+    align-items: flex-start;
+    min-width: 30vw;
     animation: spreadingElement 0.8s ease forwards ;
    
 }
 .showContent div{
-  width: 100%;
-  margin: 1rem  1rem 1rem;
+  
+  margin: 1vh 1vw;
   display: flex;
 }
 
@@ -161,7 +167,11 @@ body {
 
 /*ARTICLE CONTENT*/
 
-
+#mainInformation {
+    margin: 5vh 9vw;
+    white-space: nowrap;
+    
+}
  #mainInformation, h3, h2, h1 {
     text-align: left;
 
@@ -187,10 +197,9 @@ body {
 #subContent {
    
     font-size:1rem;
-    padding: 0 0 1rem 0 ;
-    text-align: left;
+    padding: 0 0 1vh 0 ;
     border-bottom: 5px solid white;
-    transition: border-bottom 0.3s ease-in-out;
+    width: 100vw;
     transition: all 0.3s ease-in-out;
   
 }
@@ -200,7 +209,8 @@ body {
         opacity: 0.2;
     }
     to{
-        width: 100%;
+        min-width: 75vw;
+        width: 100vw;
         opacity: 0.7;
     }
 } 
@@ -208,20 +218,141 @@ body {
     display: none;
 }
 .typingAnimation{
-    animation: typing 3s steps(80, end)  300ms forwards 1;
+    animation: typing 3s steps(80, end)  400ms forwards 1;
     overflow: hidden;
-    white-space: nowrap;
+   
     width: 0;
     display: block;
   
 }
 #subContent p {
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5vh 0;
     opacity: 0.7;
     font-weight: bold;
   
 
 }
 
-
+#projects {
+  display: grid;
+  grid-template-columns: auto auto ;
+  justify-items: center
+  
+}
+.projectContainer{
+  display: flex;
+  width: 10vw;
+  flex-direction: column;
+  align-items: center;
+}
+.projectContainer p {
+  text-align: center;
+}
 /*ARTICLE CONTENT END*/
+
+@media only screen and (max-width: 818px) {
+    /*NAV CONTENT */
+    #list {
+        font-size: 0.8rem;
+    }
+    .showContent {
+        font-size:0.7rem;
+    }
+    #logo {
+        font-size: 1.25rem;
+        box-shadow: 1px 1px 7px lightblue;
+    }
+    /*NAV CONTENT END */
+    /*ARTICLE CONTENT */
+    #mainContent h3{
+        font-size:1rem;
+      }
+    #mainContent h1 {
+      font-size:3.5rem;
+    }
+    #mainContent h2{
+        font-size:2rem;
+      }
+    #subContent{
+        font-size:0.6rem;
+        border-bottom: 2px solid white;
+
+      }
+   /*ARTICLE CONTENT END*/
+  }
+  @media only screen and (max-width: 512px) {
+
+      /*NAV CONTENT */
+    #logo {
+        font-size: 1rem;
+        box-shadow: 1px 1px 3px lightblue;
+    }
+    #list,.showContent{
+        font-size: 0.5rem;
+    }
+   .hiddenContact img {
+        width: 10px;
+        height: 10px;
+    }
+    /*NAV CONTENT END */
+
+    
+      /*ARTICLE CONTENT */
+      #mainContent h3{
+        font-size:1rem;
+      }
+    #mainContent h1 {
+      font-size:2.5rem;
+    }
+    #mainContent h2{
+        font-size:1.5rem;
+      }
+    #subContent{
+        font-size:0.5rem;
+        border-bottom: 1px solid white;
+
+      }
+   /*ARTICLE CONTENT END*/
+}
+
+@media only screen and (max-width: 427px) {
+    /*ARTICLE CONTENT */
+    #mainContent h3{
+        font-size:0.8rem;
+      }
+    #mainContent h1 {
+      font-size:1.8rem;
+    }
+    #mainContent h2{
+        font-size:1.2rem;
+      }
+  
+  #subContent{
+      font-size:0.4rem;
+      border-bottom: 1px solid white;
+
+    }
+ /*ARTICLE CONTENT END*/
+}
+
+
+@media only screen and (max-width: 348px) {
+    /*ARTICLE CONTENT */
+    #mainContent h3{
+        font-size:0.8rem;
+      }
+    #mainContent h1 {
+      font-size:1.8rem;
+    }
+    #mainContent h2{
+        font-size:1.2rem;
+      }
+  
+  #subContent{
+      font-size:0.36rem;
+      border-bottom: 1px solid white;
+
+    }
+ /*ARTICLE CONTENT END*/
+}
+
