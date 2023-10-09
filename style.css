@@ -23,6 +23,19 @@
      transform: translateX(0px);
     }
    }
+   @keyframes drop-in-from-right {
+    from {
+     opacity: 0;
+     transform: translateX(100vw);
+    }
+    to {
+     opacity: 1;
+     transform: translateX(0px);
+    }
+   }
+   .drop-in-from-right {
+    animation:  drop-in-from-right 2s ease 800ms backwards;
+   }
  html {
    overflow-x: hidden;
    overflow-y: scroll;
@@ -147,6 +160,7 @@ body {
 
 }
 .hiddenProject  >  .projects > .projectContainer {
+  width: 17vw;
   margin: 5vh 5vw;
 }
 @keyframes spreadingElement {
@@ -248,10 +262,21 @@ body {
   grid-template-columns: auto auto ;
   justify-items: center;
   justify-content: center;
+ 
+
+}
+article > .projects {
+  height: 100vh;
+  overflow: hidden;
+
+} 
+article > .projects > .projectContainer
+{
+  display: none;
 }
 .projectContainer{
   display: flex;
-  width: 10vw;
+  width: 30vw;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -262,7 +287,13 @@ body {
   text-align: center;
 }
 /*ARTICLE CONTENT END*/
-
+@media only screen and (max-width: 1025px) {
+   article > .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 818px) {
     /*NAV CONTENT */
     #list {

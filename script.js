@@ -32,6 +32,25 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
     
   });
 
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    let projectContainer = document.querySelectorAll(".projectContainer");
+
+    function handleScroll() {
+        let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollPosition > 230) {
+            Array.from(projectContainer).forEach(element => {
+                element.style.display = "flex";
+                element.classList.add("drop-in-from-right")
+            });
+        } 
+    }
+
+    // Nasłuchuj zarówno zdarzenia "scroll", jak i "touchmove"
+    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("touchmove", handleScroll);
+});
 /*
 Po polsku
 
