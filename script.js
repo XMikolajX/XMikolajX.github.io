@@ -3,13 +3,13 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
  listItem = document.getElementsByClassName("listItem"),
  hiddenBlock = document.getElementsByClassName("hiddenBlock"),
  paragraphText = document.getElementsByClassName("paragraphText"),
- navBar = document.getElementById("navBar");
+ navBar = document.getElementById("navBar"),
 
-
+  projects = navBar.getElementsByClassName("projects");
 
 
  Array.from(listItem).forEach(function (button, index) { //Convert listItem to array and for every single element execut function....
-  let projects = navBar.getElementsByClassName("projects");
+  
     button.addEventListener("click", () => { //  for every single element(li element) execut function add, addeventListiner to listining for event click when it comes...
     
       hiddenBlock[index].classList.toggle("showContent");//to  hidden block we toggle class named  showContent index represent adequate index to listItem index if listItem index is 1 then the hiddenBlock index must be 1 also

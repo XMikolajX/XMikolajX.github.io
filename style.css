@@ -193,9 +193,7 @@ body {
   display: flex;
 }
 
- #navBar > ul > div > .projects {
-  display: none;
- }
+
 
 /*NAV CONTENT END*/
 
