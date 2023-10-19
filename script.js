@@ -13,17 +13,13 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
     button.addEventListener("click", () => { //  for every single element(li element) execut function add, addeventListiner to listining for event click when it comes...
     
       hiddenBlock[index].classList.toggle("showContent");//to  hidden block we toggle class named  showContent index represent adequate index to listItem index if listItem index is 1 then the hiddenBlock index must be 1 also
-      Array.from(projects).forEach((element)=>{
-        element.style.display = "grid";
-      }) 
+  
       Array.from(listItem).forEach(function (otherButton, otherIndex) { //make array from lisItem again for every single element execut function... 
 
         if (otherIndex !== index) {// if otherIndex from second iteration forEach is diffrent to index from first iteration forEach. if that's is true, current clicked element isnt the same clicled element
             
           hiddenBlock[otherIndex].classList.remove("showContent"); //for that sitaution we remove class showContent from second iteration index 
-          Array.from(projects).forEach((element)=>{
-            element.style.display = "none";
-          })
+        
         }
       });
     });

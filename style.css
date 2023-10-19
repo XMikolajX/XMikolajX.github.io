@@ -156,10 +156,6 @@ body {
 
 
 
-.hiddenProject{
-  display: flex;
-  justify-content: center;
-}
 
 .hiddenProject img {
   width: 14vw;
