@@ -137,8 +137,8 @@ body {
 
 
 .hiddenContact {
+
     flex-direction: column;
-    align-items: center;
     font-size: 1.25rem;
   
 }
@@ -159,11 +159,17 @@ body {
 
 .hiddenProject img {
   width: 14vw;
-
 }
 .hiddenProject  >  .projects > .projectContainer {
   width: 17vw;
   margin: 5vh 5vw;
+}
+.hiddenProject  {
+  flex-direction: column;
+
+} 
+.hiddenProject h4 {
+  font-size: 1.5rem;
 }
 @keyframes spreadingElement {
     from    {
@@ -183,12 +189,20 @@ body {
     animation: spreadingElement 0.8s ease forwards ;
    
 }
-.showContent div{
+.showContent div, h4{
   
-  margin: 1vh 1vw;
+  margin: 2.5vh 1vw;
   display: flex;
 }
-
+.showContent  > h4 {
+  align-self: center;
+  padding: 1vh;
+  border-bottom: 1px solid  white;
+  
+}  
+.showContent > div > div > img {
+  margin: 0 1vw 0 0;
+}
 
 
 /*NAV CONTENT END*/
@@ -289,6 +303,7 @@ article > .projects > .projectContainer
 .projectContainer p {
   text-align: center;
 }
+
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
