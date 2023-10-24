@@ -162,7 +162,11 @@ body {
 }
 .hiddenProject  >  .projects > .projectContainer {
   width: 17vw;
-  margin: 5vh 5vw;
+  margin: 0 5vw;
+}
+.hiddenProject > .projects > .projectContainer > a {
+  width: 23vw;
+  text-wrap: wrap;
 }
 .hiddenProject  {
   flex-direction: column;
@@ -171,6 +175,7 @@ body {
 .hiddenProject h4 {
   font-size: 1.5rem;
 }
+
 @keyframes spreadingElement {
     from    {
         max-height: 0;
@@ -303,7 +308,9 @@ article > .projects > .projectContainer
 .projectContainer p {
   text-align: center;
 }
-
+.shortDescription {
+  font-size: 0.7rem;
+}
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
