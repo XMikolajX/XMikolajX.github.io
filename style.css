@@ -165,9 +165,10 @@ body {
   margin: 0 5vw;
 }
 .hiddenProject > .projects > .projectContainer > a {
-  width: 23vw;
+  width: 27vw;
   text-wrap: wrap;
 }
+
 .hiddenProject  {
   flex-direction: column;
 
@@ -289,7 +290,7 @@ body {
 
 }
 article > .projects {
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
 
 } 
