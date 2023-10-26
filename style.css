@@ -168,7 +168,6 @@ body {
   width: 27vw;
   text-wrap: wrap;
 }
-
 .hiddenProject  {
   flex-direction: column;
 
@@ -317,8 +316,13 @@ article > .projects > .projectContainer
  
   
   article > .projects > .projectContainer > a > img {
-    width: 25vw;
+    width: 28vw;
   }
+  article > .projects {
+    height: auto;
+    gap: 10vw;
+  
+  } 
 }
 @media only screen and (max-width: 818px) {
     /*NAV CONTENT */
@@ -389,7 +393,18 @@ article > .projects > .projectContainer
 }
 
 @media only screen and (max-width: 427px) {
-    /*ARTICLE CONTENT */
+  /*NAV CONTENT */
+  .showContent > h4 {
+    font-size: 0.8rem;
+  }
+  /*NAV CONTENT END */
+  /*ARTICLE CONTENT END */
+    article > .projects {
+    grid-template-columns: auto;
+    }
+    article > .projects > .projectContainer > a > img {
+      width: 50vw;
+    }
     #mainContent h3{
         font-size:0.8rem;
       }
