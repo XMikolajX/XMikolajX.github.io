@@ -311,6 +311,28 @@ article > .projects > .projectContainer
 .shortDescription {
   font-size: 0.7rem;
 }
+#contactInformation {
+  margin: 10vh 10vw;
+}
+#boxContainer {
+  flex-direction: row;
+}
+#contactInformation a  {
+}
+#contactInformation a:hover{
+  color: white;
+  color: rgba(240, 248, 255, 0.714);
+}
+.benefitsBox {
+  background-color: rgb(61, 81, 239);
+  border: 1px solid black;
+  width: 20vw;
+  min-height:  40vh;
+  margin: 1vh 1vw;
+  flex-shrink: 1;
+  flex-grow: 1;
+
+}
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
