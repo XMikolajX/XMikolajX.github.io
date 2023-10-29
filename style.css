@@ -316,6 +316,8 @@ article > .projects > .projectContainer
 }
 #boxContainer {
   flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 #contactInformation a  {
 }
@@ -326,13 +328,16 @@ article > .projects > .projectContainer
 .benefitsBox {
   background-color: rgb(61, 81, 239);
   border: 1px solid black;
-  width: 20vw;
-  min-height:  40vh;
+ 
   margin: 1vh 1vw;
-  flex-shrink: 1;
-  flex-grow: 1;
+  width: 20vw;
 
 }
+.benefitsBoxText {
+  padding: 0 1vw;
+}
+
+
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
