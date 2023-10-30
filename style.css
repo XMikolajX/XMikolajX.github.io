@@ -319,8 +319,7 @@ article > .projects > .projectContainer
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-#contactInformation a  {
-}
+
 #contactInformation a:hover{
   color: white;
   color: rgba(240, 248, 255, 0.714);
@@ -328,16 +327,21 @@ article > .projects > .projectContainer
 .benefitsBox {
   background-color: rgb(61, 81, 239);
   border: 1px solid black;
- 
   margin: 1vh 1vw;
+  height: 30vh;
   width: 20vw;
-
+  overflow: hidden;
 }
 .benefitsBoxText {
   padding: 0 1vw;
 }
-
-
+.benefitsBoxImg{
+  width: 25px;
+  margin: 1vh 1vw;
+  height: 25px;
+}
+.benefitsBoxHeader, .benefitsBoxText {
+}
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
