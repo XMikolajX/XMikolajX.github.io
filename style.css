@@ -340,8 +340,7 @@ article > .projects > .projectContainer
   margin: 1vh 1vw;
   height: 25px;
 }
-.benefitsBoxHeader, .benefitsBoxText {
-}
+
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
