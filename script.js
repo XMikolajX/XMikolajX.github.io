@@ -37,17 +37,26 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
   
   
     let mainContent = document.getElementById("mainContent"),
-    projectContainer = mainContent.querySelectorAll(".projectContainer");
+    projectContainer = mainContent.querySelectorAll(".projectContainer"),
+    benefitsBox =  document.querySelectorAll(".benefitsBox");
     function handleScroll() {
-        let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+          let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollPosition > 145) {
-            Array.from(projectContainer).forEach(element => {
+          if (scrollPosition > 145) {
+              Array.from(projectContainer).forEach(element => {
                 element.style.display = "flex";
                 element.classList.add("drop-in-from-right");
     
-          });
-        };
+              });
+            }
+          else if(scrollPosition > 700) {
+         
+              Array.from(benefitsBox).forEach(element => {
+                element.style.display = "flex";
+                element.classList.add("drop-in-from-left");
+              });
+            };
+      
     };
 
     // Nasłuchuj zarówno zdarzenia "scroll", jak i "touchmove"
