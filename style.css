@@ -33,7 +33,7 @@
      transform: translateX(0px);
     }
    }
-   @keyframes drop-in-from-left{
+   @keyframes drop-in-from-left {
     from {
      opacity: 0;
      transform: translateX(-100vh);
@@ -343,8 +343,8 @@ article > .projects > .projectContainer
   background-color: rgb(61, 81, 239);
   border: 1px solid black;
   margin: 1vh 1vw;
-  height: 30vh;
-  width: 20vw;
+  height: 300px;
+  width:23vw;
   overflow: hidden;
 }
 .benefitsBoxText {
@@ -400,6 +400,17 @@ article > .projects > .projectContainer
       article > .projects > .projectContainer > a > p {
         font-size: 0.7rem;
       }
+      #boxContainer {
+        grid-template-columns: auto auto;
+        column-gap:15vw;
+        row-gap:10vw;
+        
+      }
+      .benefitsBox {
+        font-size: 0.8rem;
+        width:30vw;
+        height: 220px;
+      } 
    /*ARTICLE CONTENT END*/
   }
   @media only screen and (max-width: 512px) {
@@ -434,6 +445,10 @@ article > .projects > .projectContainer
         border-bottom: 1px solid white;
 
       }
+      .benefitsBox {
+        font-size: 0.7rem;
+    
+      } 
    /*ARTICLE CONTENT END*/
 }
 
@@ -465,6 +480,12 @@ article > .projects > .projectContainer
       border-bottom: 1px solid white;
 
     }
+
+    .benefitsBox {
+      font-size: 0.6rem;
+  
+    } 
+    
  /*ARTICLE CONTENT END*/
 }
 

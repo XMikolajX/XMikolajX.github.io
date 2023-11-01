@@ -52,7 +52,6 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
           else if(scrollPosition > 700) {
          
               Array.from(benefitsBox).forEach(element => {
-                element.style.display = "flex";
                 element.classList.add("drop-in-from-left");
               });
             };
