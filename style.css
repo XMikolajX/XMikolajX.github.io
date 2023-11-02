@@ -304,8 +304,9 @@ body {
 
 }
 article > .projects {
-  height: 100vh;
+ 
   overflow: hidden;
+  padding: 2vw 0 2vw 0;
 
 } 
 article > .projects > .projectContainer
@@ -318,14 +319,23 @@ article > .projects > .projectContainer
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 5vw;
+
 }
 .projectContainer p {
   text-align: center;
 }
-.shortDescription {
+ article > .projects > .projectContainer > a {
+  display: block;
+  padding: 2vw 0 2vw 0;
+ }
+.shortDescription{
+  display: block;
+  box-shadow: 0px 00px 7px -4px rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 0 20px 0;
   font-size: 0.7rem;
 }
+
 #contactInformation {
   margin: 10vh 10vw;
 }
@@ -340,12 +350,14 @@ article > .projects > .projectContainer
   color: rgba(240, 248, 255, 0.714);
 }
 .benefitsBox {
+  display: none;
   background-color: rgb(61, 81, 239);
   border: 1px solid black;
   margin: 1vh 1vw;
   height: 300px;
   width:23vw;
   overflow: hidden;
+  box-shadow: 0px 0px 8px -4px rgb(255, 255, 255);
 }
 .benefitsBoxText {
   padding: 0 1vw;
@@ -366,6 +378,7 @@ article > .projects > .projectContainer
   article > .projects {
     height: auto;
     gap: 10vw;
+    
   
   } 
 }
@@ -380,6 +393,9 @@ article > .projects > .projectContainer
     #logo {
         font-size: 1.25rem;
         box-shadow: 1px 1px 7px lightblue;
+    }
+    .showContent > h4 {
+      font-size: 0.8rem;
     }
     /*NAV CONTENT END */
     /*ARTICLE CONTENT */
@@ -427,6 +443,9 @@ article > .projects > .projectContainer
         width: 10px;
         height: 10px;
     }
+    .showContent > h4 {
+      font-size: 0.6rem;
+    }
     /*NAV CONTENT END */
 
     
@@ -454,9 +473,7 @@ article > .projects > .projectContainer
 
 @media only screen and (max-width: 427px) {
   /*NAV CONTENT */
-  .showContent > h4 {
-    font-size: 0.8rem;
-  }
+
   /*NAV CONTENT END */
   /*ARTICLE CONTENT END */
     article > .projects {

@@ -42,17 +42,19 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
     function handleScroll() {
           let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 
-          if (scrollPosition > 145) {
+          if (scrollPosition > 50) {
               Array.from(projectContainer).forEach(element => {
                 element.style.display = "flex";
                 element.classList.add("drop-in-from-right");
     
               });
             }
-          else if(scrollPosition > 700) {
+           if(scrollPosition > 840) {
          
               Array.from(benefitsBox).forEach(element => {
+                element.style.display = "flex";
                 element.classList.add("drop-in-from-left");
+
               });
             };
       
