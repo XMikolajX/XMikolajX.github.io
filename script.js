@@ -42,7 +42,7 @@ let showContent = document.getElementsByClassName("showContent")[0], //first ele
     function handleScroll() {
           let scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 
-          if (scrollPosition > 30) {
+          if (scrollPosition > 20) {
               Array.from(projectContainer).forEach(element => {
                 element.style.display = "flex";
                 element.classList.add("drop-in-from-right");
