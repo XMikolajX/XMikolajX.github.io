@@ -53,6 +53,10 @@ let app = {
               Array.from(app.benefitsBox).forEach(element => {
                 element.style.display = "flex";
                 element.classList.add("drop-in-from-left");
+                setTimeout(() => {
+                  element.classList.add("changeColor");
+               
+                },2000)
 
               });
             };
