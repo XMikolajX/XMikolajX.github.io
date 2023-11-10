@@ -50,13 +50,13 @@ let app = {
             }
            if(scrollPosition > 840) {
          
-              Array.from(app.benefitsBox).forEach(element => {
+              Array.from(app.benefitsBox).forEach((element, index) => {
                 element.style.display = "flex";
                 element.classList.add("drop-in-from-left");
                 setTimeout(() => {
                   element.classList.add("changeColor");
                
-                },2000)
+                },1500 * index)
 
               });
             };

@@ -51,9 +51,9 @@
     overflow: hidden;
    }
    .changeColor {
-    background-color: #1f4c29 !important; 
+    background-color: rgb(61, 81, 239) !important; 
     transition: background-color 2s ease 1s;
-    opacity: 1; 
+  
    }
  html {
    overflow-x: hidden;
@@ -361,7 +361,7 @@ article > .projects > .projectContainer
 }
 .benefitsBox {
   display: none;
-  background-color: rgb(61, 81, 239);
+  background-color: rgba(61, 82, 239, 0.068);
   border: 1px solid black;
   margin: 1vh 1vw;
   height: 300px;
