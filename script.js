@@ -56,7 +56,7 @@ let app = {
                 setTimeout(() => {
                   element.classList.add("changeColor");
                
-                },1500 * index)
+                },1300 * index)
 
               });
             };

@@ -140,9 +140,10 @@ body {
     position: absolute;
     top: 11vh;
     right: 10vw;
-    box-shadow: 1px 1px 25px lightblue;
+    box-shadow: 0px 0px 5px lightblue;
     background-color: #0A192F;
     z-index: 999;
+    border-radius: 10px;
 
 }
 
