@@ -1,4 +1,25 @@
 /*NAV CONTENT */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #0c070e #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A192F;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
 
 * {
     box-sizing: border-box;
@@ -50,9 +71,11 @@
     animation:  drop-in-from-left 2s ease 800ms backwards;
     overflow: hidden;
    }
+ 
    .changeColor {
-    background-color: rgb(61, 81, 239) !important; 
+    background-color:  rgb(6, 74, 244) !important; 
     transition: background-color 2s ease 1s;
+    box-shadow: 0px 0px 8px -4px rgb(255, 255, 255);
   
    }
  html {
@@ -76,6 +99,7 @@ body {
 
 }
 #navBar {
+  background-color: #0000002b;
   position: fixed;
   top: 0;
   right: 0;
@@ -121,6 +145,7 @@ body {
     white-space: nowrap;
 }
   #list  > li  {
+    background-color: #ffffff0a;
     margin: 0 1vw;
     cursor: pointer;
     padding: 1vh 1vw;
@@ -356,10 +381,7 @@ article > .projects > .projectContainer
   grid-template-columns: auto auto auto auto;
 }
 
-#contactInformation a:hover{
-  color: white;
-  color: rgba(240, 248, 255, 0.714);
-}
+
 .benefitsBox {
   display: none;
   background-color: rgba(61, 82, 239, 0.068);
@@ -368,7 +390,7 @@ article > .projects > .projectContainer
   height: 300px;
   width:23vw;
   overflow: hidden;
-  box-shadow: 0px 0px 8px -4px rgb(255, 255, 255);
+  
 }
 .benefitsBoxText {
   padding: 0 1vw;
@@ -492,7 +514,7 @@ article > .projects > .projectContainer
 
     }
     .shortDescription{
-   
+      font-size: 0.5rem;
       width: 75vw;
     }
     article > .projects > .projectContainer > a > img {

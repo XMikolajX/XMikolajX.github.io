@@ -55,9 +55,11 @@ let app = {
                 element.classList.add("drop-in-from-left");
                 setTimeout(() => {
                   element.classList.add("changeColor");
-               
+                  
                 },1300 * index)
-
+             
+            
+              
               });
             };
       
