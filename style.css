@@ -363,7 +363,7 @@ article > .projects > .projectContainer
 .shortDescription{
   display: block;
   background-color: #0d2549;
-  line-height: 18px;
+  line-height: 15px;
   box-shadow: 0px 00px 7px -4px rgb(255, 255, 255);
   border-radius: 10px;
   padding: 20px 0 20px 0;
@@ -401,6 +401,15 @@ article > .projects > .projectContainer
   height: 25px;
 }
 
+
+@media only screen and (max-width: 1333px) {
+  article > .projects {
+    height: auto;
+    gap: 10vw;
+    
+  
+  }
+}
 /*ARTICLE CONTENT END*/
 @media only screen and (max-width: 1025px) {
  
@@ -408,12 +417,7 @@ article > .projects > .projectContainer
   article > .projects > .projectContainer > a > img {
     width: 28vw;
   }
-  article > .projects {
-    height: auto;
-    gap: 10vw;
-    
-  
-  } 
+ 
 }
 @media only screen and (max-width: 818px) {
     /*NAV CONTENT */
@@ -460,6 +464,22 @@ article > .projects > .projectContainer
         width:38vw;
         height: 170px;
       } 
+
+      article > .projects {
+        grid-template-columns: auto;
+    
+        }
+        article > .projects > .projectContainer > a > img {
+          width: 75vw;
+      }
+        .shortDescription{
+          font-size: 0.8rem;
+          width: 75vw;
+          line-height: 15px;
+       
+        }
+     
+       
    /*ARTICLE CONTENT END*/
   }
   @media only screen and (max-width: 512px) {
@@ -501,6 +521,12 @@ article > .projects > .projectContainer
         font-size: 0.7rem;
     
       } 
+      .shortDescription{
+        font-size: 0.6rem;
+      }
+
+   
+     
    /*ARTICLE CONTENT END*/
 }
 
@@ -509,17 +535,8 @@ article > .projects > .projectContainer
 
   /*NAV CONTENT END */
   /*ARTICLE CONTENT END */
-    article > .projects {
-    grid-template-columns: auto;
 
-    }
-    .shortDescription{
-      font-size: 0.5rem;
-      width: 75vw;
-    }
-    article > .projects > .projectContainer > a > img {
-      width: 50vw;
-    }
+ 
     #mainContent h3{
         font-size:0.8rem;
       }
@@ -565,6 +582,9 @@ article > .projects > .projectContainer
     article > .projects > .projectContainer > a > p {
       font-size: 0.5rem;
     }
+    .shortDescription{
+      font-size: 0.5rem;
+      line-height: 9px;
+    }
  /*ARTICLE CONTENT END*/
 }
-
